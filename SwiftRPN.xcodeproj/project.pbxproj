@@ -1,0 +1,1006 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD155BDE2B044328003BCC0D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD155BDD2B044328003BCC0D /* Colors.swift */; };
+		CD478BD82B28C68100A4AC3D /* CopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD478BD72B28C68100A4AC3D /* CopyableLabel.swift */; };
+		CD49711A2B128212005195AE /* ExtraButtonAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4971192B128212005195AE /* ExtraButtonAlertController.swift */; };
+		CD4FA9EE2AF4273300D33105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4FA9ED2AF4273300D33105 /* AppDelegate.swift */; };
+		CD4FA9F02AF4273300D33105 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4FA9EF2AF4273300D33105 /* SceneDelegate.swift */; };
+		CD4FA9F22AF4273300D33105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4FA9F12AF4273300D33105 /* ViewController.swift */; };
+		CD4FA9F52AF4273300D33105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4FA9F32AF4273300D33105 /* Main.storyboard */; };
+		CD4FA9F72AF4273400D33105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4FA9F62AF4273400D33105 /* Assets.xcassets */; };
+		CD4FA9FA2AF4273400D33105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4FA9F82AF4273400D33105 /* LaunchScreen.storyboard */; };
+		CD4FAA782AF4282000D33105 /* RCalcBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4FAA032AF4282000D33105 /* RCalcBridge.swift */; };
+		CD4FAA792AF4282000D33105 /* SwiftRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD4FAA042AF4282000D33105 /* SwiftRenderer.cpp */; };
+		CD4FAA8E2AF4282000D33105 /* SwiftBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD4FAA712AF4282000D33105 /* SwiftBackend.cpp */; };
+		CD4FAA8F2AF4282000D33105 /* RCalcBinding.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD4FAA722AF4282000D33105 /* RCalcBinding.mm */; };
+		CD5281842B27BE5400BB0B97 /* func_exponential.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD52815C2B27BE5400BB0B97 /* func_exponential.inl */; };
+		CD5281852B27BE5400BB0B97 /* func_vector_relational.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD52815D2B27BE5400BB0B97 /* func_vector_relational.inl */; };
+		CD5281862B27BE5400BB0B97 /* func_vector_relational_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD52815F2B27BE5400BB0B97 /* func_vector_relational_simd.inl */; };
+		CD5281872B27BE5400BB0B97 /* func_matrix_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD5281612B27BE5400BB0B97 /* func_matrix_simd.inl */; };
+		CD5281882B27BE5400BB0B97 /* func_geometric.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD5281652B27BE5400BB0B97 /* func_geometric.inl */; };
+		CD5281892B27BE5400BB0B97 /* func_common.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD5281662B27BE5400BB0B97 /* func_common.inl */; };
+		CD52818A2B27BE5400BB0B97 /* type_vec4.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD5281682B27BE5400BB0B97 /* type_vec4.inl */; };
+		CD52818B2B27BE5400BB0B97 /* type_mat2x2.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD52816C2B27BE5400BB0B97 /* type_mat2x2.inl */; };
+		CD52818C2B27BE5400BB0B97 /* type_vec1.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD52816D2B27BE5400BB0B97 /* type_vec1.inl */; };
+		CD52818D2B27BE5400BB0B97 /* func_common_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD52816E2B27BE5400BB0B97 /* func_common_simd.inl */; };
+		CD52818E2B27BE5400BB0B97 /* type_mat4x4.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD52816F2B27BE5400BB0B97 /* type_mat4x4.inl */; };
+		CD52818F2B27BE5400BB0B97 /* func_geometric_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD5281702B27BE5400BB0B97 /* func_geometric_simd.inl */; };
+		CD5281902B27BE5400BB0B97 /* type_vec2.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD5281712B27BE5400BB0B97 /* type_vec2.inl */; };
+		CD5281912B27BE5400BB0B97 /* type_vec3.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD5281722B27BE5400BB0B97 /* type_vec3.inl */; };
+		CD5281922B27BE5400BB0B97 /* type_mat4x4_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD5281732B27BE5400BB0B97 /* type_mat4x4_simd.inl */; };
+		CD5281932B27BE5400BB0B97 /* func_matrix.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD5281752B27BE5400BB0B97 /* func_matrix.inl */; };
+		CD5281942B27BE5400BB0B97 /* type_vec4_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD52817B2B27BE5400BB0B97 /* type_vec4_simd.inl */; };
+		CD5281952B27BE5400BB0B97 /* func_exponential_simd.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD52817C2B27BE5400BB0B97 /* func_exponential_simd.inl */; };
+		CD5281962B27BE5400BB0B97 /* type_mat3x3.inl in Resources */ = {isa = PBXBuildFile; fileRef = CD52817E2B27BE5400BB0B97 /* type_mat3x3.inl */; };
+		CD5281972B27BE5400BB0B97 /* SCsub in Resources */ = {isa = PBXBuildFile; fileRef = CD5281802B27BE5400BB0B97 /* SCsub */; };
+		CD56AD872B0C2DC5008983CB /* MainHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56AD862B0C2DC5008983CB /* MainHelpView.swift */; };
+		CD56AD8A2B0C30AF008983CB /* HelpSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56AD892B0C30AF008983CB /* HelpSection.swift */; };
+		CD56AD8C2B0C35C8008983CB /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56AD8B2B0C35C8008983CB /* HelpCommand.swift */; };
+		CD56AD8E2B0C3FCC008983CB /* HelpOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56AD8D2B0C3FCC008983CB /* HelpOperator.swift */; };
+		CD56AD902B0C4760008983CB /* HelpUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56AD8F2B0C4760008983CB /* HelpUnit.swift */; };
+		CD5715E42B03E367005354A6 /* DisplayChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5715E32B03E367005354A6 /* DisplayChunk.swift */; };
+		CD5715E62B03E4C2005354A6 /* DisplayLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5715E52B03E4C2005354A6 /* DisplayLine.swift */; };
+		CD5715E82B03E9DF005354A6 /* DisplayEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5715E72B03E9DF005354A6 /* DisplayEntry.swift */; };
+		CD5715EA2B03EE99005354A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5715E92B03EE99005354A6 /* Constants.swift */; };
+		CD6A00312B140FAC00DF360C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6A00302B140FAC00DF360C /* Settings.swift */; };
+		CD6A00352B14121000DF360C /* MathKeyboard+Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6A00342B14121000DF360C /* MathKeyboard+Buttons.swift */; };
+		CD6A00372B1413E200DF360C /* MathKeyboard+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6A00362B1413E200DF360C /* MathKeyboard+Layout.swift */; };
+		CD6A00392B14148E00DF360C /* OperatorTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6A00382B14148E00DF360C /* OperatorTag.swift */; };
+		CD6A003B2B14149400DF360C /* ExtraButtonAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6A003A2B14149400DF360C /* ExtraButtonAssignment.swift */; };
+		CD6A003E2B1414EE00DF360C /* ViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6A003D2B1414EE00DF360C /* ViewController+Navigation.swift */; };
+		CD6A00402B14152B00DF360C /* ViewController+RCalcReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6A003F2B14152B00DF360C /* ViewController+RCalcReceiver.swift */; };
+		CD6A00422B14156800DF360C /* ViewController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6A00412B14156800DF360C /* ViewController+ScrollView.swift */; };
+		CD6A00442B1415CD00DF360C /* ViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6A00432B1415CD00DF360C /* ViewController+TextField.swift */; };
+		CD6A00462B14165A00DF360C /* ViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6A00452B14165A00DF360C /* ViewController+Layout.swift */; };
+		CD7C4AC92B2B594E0045830B /* StackCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7C4AC82B2B594E0045830B /* StackCollectionDataSource.swift */; };
+		CD8ADB6C2AF9C2B7007D975C /* StackItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8ADB6B2AF9C2B7007D975C /* StackItemView.swift */; };
+		CD9A35362B0E6857002ADB07 /* HelpDisclosureStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A35352B0E6857002ADB07 /* HelpDisclosureStyle.swift */; };
+		CD9A35382B0E75F3002ADB07 /* HelpExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A35372B0E75F3002ADB07 /* HelpExampleView.swift */; };
+		CD9A353E2B0FBA3A002ADB07 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9A353D2B0FBA3A002ADB07 /* SettingsController.swift */; };
+		CD9AA2D42B2B613A003742AF /* StackCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AA2D32B2B613A003742AF /* StackCollectionCell.swift */; };
+		CD9AA2D82B2B8DD2003742AF /* StackCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AA2D72B2B8DD2003742AF /* StackCollectionView.swift */; };
+		CD9AA2DA2B2BB2A2003742AF /* StackCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AA2D92B2BB2A2003742AF /* StackCollectionLayout.swift */; };
+		CD9AA2DD2B2BC1C1003742AF /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = CD9AA2DB2B2BC1C1003742AF /* LICENSE.md */; };
+		CD9AA2DE2B2BC1C1003742AF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CD9AA2DC2B2BC1C1003742AF /* README.md */; };
+		CDA47EFC2AF9611500AD7B83 /* StackScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA47EFB2AF9611500AD7B83 /* StackScrollView.swift */; };
+		CDCC8F9E2AF81141001E2A7B /* Scratchpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCC8F9D2AF81141001E2A7B /* Scratchpad.swift */; };
+		CDCC8FA02AF81953001E2A7B /* MathKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCC8F9F2AF81953001E2A7B /* MathKeyboard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD155BDD2B044328003BCC0D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CD478BD72B28C68100A4AC3D /* CopyableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyableLabel.swift; sourceTree = "<group>"; };
+		CD4971192B128212005195AE /* ExtraButtonAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraButtonAlertController.swift; sourceTree = "<group>"; };
+		CD4FA9EA2AF4273300D33105 /* SwiftRPN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRPN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4FA9ED2AF4273300D33105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD4FA9EF2AF4273300D33105 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD4FA9F12AF4273300D33105 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD4FA9F42AF4273300D33105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD4FA9F62AF4273400D33105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD4FA9F92AF4273400D33105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD4FA9FB2AF4273400D33105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4FAA032AF4282000D33105 /* RCalcBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RCalcBridge.swift; sourceTree = "<group>"; };
+		CD4FAA042AF4282000D33105 /* SwiftRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SwiftRenderer.cpp; sourceTree = "<group>"; };
+		CD4FAA052AF4282000D33105 /* SwiftBackend.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SwiftBackend.hpp; sourceTree = "<group>"; };
+		CD4FAA702AF4282000D33105 /* RCalcBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCalcBinding.h; sourceTree = "<group>"; };
+		CD4FAA712AF4282000D33105 /* SwiftBackend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SwiftBackend.cpp; sourceTree = "<group>"; };
+		CD4FAA722AF4282000D33105 /* RCalcBinding.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCalcBinding.mm; sourceTree = "<group>"; };
+		CD4FAA762AF4282000D33105 /* SwiftRenderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SwiftRenderer.hpp; sourceTree = "<group>"; };
+		CD5281132B27BD9400BB0B97 /* librcalc.ios.debug.arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librcalc.ios.debug.arm64.a; path = ../../../../SwiftRPN/SwiftRPN/RCalc/lib/librcalc.ios.debug.arm64.a; sourceTree = "<group>"; };
+		CD5281142B27BD9400BB0B97 /* librcalc.ios.debug.arm64.simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librcalc.ios.debug.arm64.simulator.a; sourceTree = "<group>"; };
+		CD5281152B27BD9400BB0B97 /* librcalc.ios.release.arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librcalc.ios.release.arm64.a; sourceTree = "<group>"; };
+		CD5281162B27BD9400BB0B97 /* librcalc.ios.release.arm64.simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librcalc.ios.release.arm64.simulator.a; sourceTree = "<group>"; };
+		CD52811D2B27BE5400BB0B97 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		CD52811E2B27BE5400BB0B97 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		CD52811F2B27BE5400BB0B97 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		CD5281202B27BE5400BB0B97 /* version_generated.gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version_generated.gen.h; sourceTree = "<group>"; };
+		CD5281212B27BE5400BB0B97 /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		CD5281232B27BE5400BB0B97 /* units.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = units.h; sourceTree = "<group>"; };
+		CD5281242B27BE5400BB0B97 /* display_tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = display_tags.h; sourceTree = "<group>"; };
+		CD5281252B27BE5400BB0B97 /* logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
+		CD5281262B27BE5400BB0B97 /* format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = format.h; sourceTree = "<group>"; };
+		CD5281272B27BE5400BB0B97 /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter.h; sourceTree = "<group>"; };
+		CD5281282B27BE5400BB0B97 /* anycase_str.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = anycase_str.h; sourceTree = "<group>"; };
+		CD52812B2B27BE5400BB0B97 /* renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = renderer.h; sourceTree = "<group>"; };
+		CD52812D2B27BE5400BB0B97 /* operators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = operators.h; sourceTree = "<group>"; };
+		CD52812E2B27BE5400BB0B97 /* stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stats.h; sourceTree = "<group>"; };
+		CD52812F2B27BE5400BB0B97 /* application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = application.h; sourceTree = "<group>"; };
+		CD5281302B27BE5400BB0B97 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		CD5281322B27BE5400BB0B97 /* commands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commands.h; sourceTree = "<group>"; };
+		CD5281342B27BE5400BB0B97 /* displayable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = displayable.h; sourceTree = "<group>"; };
+		CD5281352B27BE5400BB0B97 /* help_text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = help_text.h; sourceTree = "<group>"; };
+		CD5281362B27BE5400BB0B97 /* autocomplete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autocomplete.h; sourceTree = "<group>"; };
+		CD5281372B27BE5400BB0B97 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		CD52813A2B27BE5400BB0B97 /* bigint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bigint.h; sourceTree = "<group>"; };
+		CD52813B2B27BE5400BB0B97 /* register_modules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = register_modules.h; sourceTree = "<group>"; };
+		CD52813D2B27BE5400BB0B97 /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
+		CD52813E2B27BE5400BB0B97 /* vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
+		CD52813F2B27BE5400BB0B97 /* mat4x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat4x4.hpp; sourceTree = "<group>"; };
+		CD5281402B27BE5400BB0B97 /* mat2x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat2x2.hpp; sourceTree = "<group>"; };
+		CD5281412B27BE5400BB0B97 /* exponential.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = exponential.hpp; sourceTree = "<group>"; };
+		CD5281422B27BE5400BB0B97 /* vec2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec2.hpp; sourceTree = "<group>"; };
+		CD5281432B27BE5400BB0B97 /* vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec3.hpp; sourceTree = "<group>"; };
+		CD5281442B27BE5400BB0B97 /* mat3x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mat3x3.hpp; sourceTree = "<group>"; };
+		CD5281462B27BE5400BB0B97 /* matrix_double4x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double4x4.hpp; sourceTree = "<group>"; };
+		CD5281472B27BE5400BB0B97 /* matrix_double2x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double2x2.hpp; sourceTree = "<group>"; };
+		CD5281482B27BE5400BB0B97 /* vector_double4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_double4.hpp; sourceTree = "<group>"; };
+		CD5281492B27BE5400BB0B97 /* vector_double1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_double1.hpp; sourceTree = "<group>"; };
+		CD52814A2B27BE5400BB0B97 /* vector_double3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_double3.hpp; sourceTree = "<group>"; };
+		CD52814B2B27BE5400BB0B97 /* vector_double2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_double2.hpp; sourceTree = "<group>"; };
+		CD52814C2B27BE5400BB0B97 /* matrix_double3x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix_double3x3.hpp; sourceTree = "<group>"; };
+		CD52814E2B27BE5400BB0B97 /* neon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neon.h; sourceTree = "<group>"; };
+		CD52814F2B27BE5400BB0B97 /* vector_relational.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector_relational.h; sourceTree = "<group>"; };
+		CD5281502B27BE5400BB0B97 /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		CD5281512B27BE5400BB0B97 /* packing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = packing.h; sourceTree = "<group>"; };
+		CD5281522B27BE5400BB0B97 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		CD5281532B27BE5400BB0B97 /* trigonometric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trigonometric.h; sourceTree = "<group>"; };
+		CD5281542B27BE5400BB0B97 /* geometric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geometric.h; sourceTree = "<group>"; };
+		CD5281552B27BE5400BB0B97 /* integer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = integer.h; sourceTree = "<group>"; };
+		CD5281562B27BE5400BB0B97 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		CD5281572B27BE5400BB0B97 /* exponential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exponential.h; sourceTree = "<group>"; };
+		CD5281582B27BE5400BB0B97 /* matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = matrix.hpp; sourceTree = "<group>"; };
+		CD5281592B27BE5400BB0B97 /* trigonometric.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = trigonometric.hpp; sourceTree = "<group>"; };
+		CD52815A2B27BE5400BB0B97 /* geometric.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = geometric.hpp; sourceTree = "<group>"; };
+		CD52815C2B27BE5400BB0B97 /* func_exponential.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_exponential.inl; sourceTree = "<group>"; };
+		CD52815D2B27BE5400BB0B97 /* func_vector_relational.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_vector_relational.inl; sourceTree = "<group>"; };
+		CD52815E2B27BE5400BB0B97 /* _fixes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _fixes.hpp; sourceTree = "<group>"; };
+		CD52815F2B27BE5400BB0B97 /* func_vector_relational_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_vector_relational_simd.inl; sourceTree = "<group>"; };
+		CD5281602B27BE5400BB0B97 /* qualifier.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = qualifier.hpp; sourceTree = "<group>"; };
+		CD5281612B27BE5400BB0B97 /* func_matrix_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_matrix_simd.inl; sourceTree = "<group>"; };
+		CD5281622B27BE5400BB0B97 /* _noise.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _noise.hpp; sourceTree = "<group>"; };
+		CD5281632B27BE5400BB0B97 /* _features.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _features.hpp; sourceTree = "<group>"; };
+		CD5281642B27BE5400BB0B97 /* _vectorize.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _vectorize.hpp; sourceTree = "<group>"; };
+		CD5281652B27BE5400BB0B97 /* func_geometric.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_geometric.inl; sourceTree = "<group>"; };
+		CD5281662B27BE5400BB0B97 /* func_common.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_common.inl; sourceTree = "<group>"; };
+		CD5281672B27BE5400BB0B97 /* _swizzle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _swizzle.hpp; sourceTree = "<group>"; };
+		CD5281682B27BE5400BB0B97 /* type_vec4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_vec4.inl; sourceTree = "<group>"; };
+		CD5281692B27BE5400BB0B97 /* type_mat3x3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat3x3.hpp; sourceTree = "<group>"; };
+		CD52816A2B27BE5400BB0B97 /* compute_common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = compute_common.hpp; sourceTree = "<group>"; };
+		CD52816B2B27BE5400BB0B97 /* setup.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = setup.hpp; sourceTree = "<group>"; };
+		CD52816C2B27BE5400BB0B97 /* type_mat2x2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat2x2.inl; sourceTree = "<group>"; };
+		CD52816D2B27BE5400BB0B97 /* type_vec1.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_vec1.inl; sourceTree = "<group>"; };
+		CD52816E2B27BE5400BB0B97 /* func_common_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_common_simd.inl; sourceTree = "<group>"; };
+		CD52816F2B27BE5400BB0B97 /* type_mat4x4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat4x4.inl; sourceTree = "<group>"; };
+		CD5281702B27BE5400BB0B97 /* func_geometric_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_geometric_simd.inl; sourceTree = "<group>"; };
+		CD5281712B27BE5400BB0B97 /* type_vec2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_vec2.inl; sourceTree = "<group>"; };
+		CD5281722B27BE5400BB0B97 /* type_vec3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_vec3.inl; sourceTree = "<group>"; };
+		CD5281732B27BE5400BB0B97 /* type_mat4x4_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat4x4_simd.inl; sourceTree = "<group>"; };
+		CD5281742B27BE5400BB0B97 /* type_mat4x4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat4x4.hpp; sourceTree = "<group>"; };
+		CD5281752B27BE5400BB0B97 /* func_matrix.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_matrix.inl; sourceTree = "<group>"; };
+		CD5281762B27BE5400BB0B97 /* type_mat2x2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_mat2x2.hpp; sourceTree = "<group>"; };
+		CD5281772B27BE5400BB0B97 /* type_vec1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_vec1.hpp; sourceTree = "<group>"; };
+		CD5281782B27BE5400BB0B97 /* _swizzle_func.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _swizzle_func.hpp; sourceTree = "<group>"; };
+		CD5281792B27BE5400BB0B97 /* type_vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_vec3.hpp; sourceTree = "<group>"; };
+		CD52817A2B27BE5400BB0B97 /* compute_vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = compute_vector_relational.hpp; sourceTree = "<group>"; };
+		CD52817B2B27BE5400BB0B97 /* type_vec4_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_vec4_simd.inl; sourceTree = "<group>"; };
+		CD52817C2B27BE5400BB0B97 /* func_exponential_simd.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = func_exponential_simd.inl; sourceTree = "<group>"; };
+		CD52817D2B27BE5400BB0B97 /* type_vec2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_vec2.hpp; sourceTree = "<group>"; };
+		CD52817E2B27BE5400BB0B97 /* type_mat3x3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = type_mat3x3.inl; sourceTree = "<group>"; };
+		CD52817F2B27BE5400BB0B97 /* type_vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = type_vec4.hpp; sourceTree = "<group>"; };
+		CD5281802B27BE5400BB0B97 /* SCsub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SCsub; sourceTree = "<group>"; };
+		CD5281812B27BE5400BB0B97 /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
+		CD5281832B27BE5400BB0B97 /* license.gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = license.gen.h; sourceTree = "<group>"; };
+		CD5281982B27BF0200BB0B97 /* coredef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coredef.h; sourceTree = "<group>"; };
+		CD52819A2B27BF4600BB0B97 /* allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allocator.h; sourceTree = "<group>"; };
+		CD52819B2B27BF4600BB0B97 /* cowvec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = cowvec.h; sourceTree = "<group>"; };
+		CD56AD862B0C2DC5008983CB /* MainHelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHelpView.swift; sourceTree = "<group>"; };
+		CD56AD892B0C30AF008983CB /* HelpSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSection.swift; sourceTree = "<group>"; };
+		CD56AD8B2B0C35C8008983CB /* HelpCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
+		CD56AD8D2B0C3FCC008983CB /* HelpOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpOperator.swift; sourceTree = "<group>"; };
+		CD56AD8F2B0C4760008983CB /* HelpUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpUnit.swift; sourceTree = "<group>"; };
+		CD5715E32B03E367005354A6 /* DisplayChunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayChunk.swift; sourceTree = "<group>"; };
+		CD5715E52B03E4C2005354A6 /* DisplayLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLine.swift; sourceTree = "<group>"; };
+		CD5715E72B03E9DF005354A6 /* DisplayEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEntry.swift; sourceTree = "<group>"; };
+		CD5715E92B03EE99005354A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CD6A00302B140FAC00DF360C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		CD6A00342B14121000DF360C /* MathKeyboard+Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MathKeyboard+Buttons.swift"; sourceTree = "<group>"; };
+		CD6A00362B1413E200DF360C /* MathKeyboard+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MathKeyboard+Layout.swift"; sourceTree = "<group>"; };
+		CD6A00382B14148E00DF360C /* OperatorTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorTag.swift; sourceTree = "<group>"; };
+		CD6A003A2B14149400DF360C /* ExtraButtonAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraButtonAssignment.swift; sourceTree = "<group>"; };
+		CD6A003D2B1414EE00DF360C /* ViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Navigation.swift"; sourceTree = "<group>"; };
+		CD6A003F2B14152B00DF360C /* ViewController+RCalcReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+RCalcReceiver.swift"; sourceTree = "<group>"; };
+		CD6A00412B14156800DF360C /* ViewController+ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ScrollView.swift"; sourceTree = "<group>"; };
+		CD6A00432B1415CD00DF360C /* ViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TextField.swift"; sourceTree = "<group>"; };
+		CD6A00452B14165A00DF360C /* ViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Layout.swift"; sourceTree = "<group>"; };
+		CD7C4AC82B2B594E0045830B /* StackCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCollectionDataSource.swift; sourceTree = "<group>"; };
+		CD8ADB6B2AF9C2B7007D975C /* StackItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackItemView.swift; sourceTree = "<group>"; };
+		CD9A35352B0E6857002ADB07 /* HelpDisclosureStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpDisclosureStyle.swift; sourceTree = "<group>"; };
+		CD9A35372B0E75F3002ADB07 /* HelpExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpExampleView.swift; sourceTree = "<group>"; };
+		CD9A353D2B0FBA3A002ADB07 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		CD9AA2D32B2B613A003742AF /* StackCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCollectionCell.swift; sourceTree = "<group>"; };
+		CD9AA2D72B2B8DD2003742AF /* StackCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCollectionView.swift; sourceTree = "<group>"; };
+		CD9AA2D92B2BB2A2003742AF /* StackCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCollectionLayout.swift; sourceTree = "<group>"; };
+		CD9AA2DB2B2BC1C1003742AF /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		CD9AA2DC2B2BC1C1003742AF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CD9AA2DF2B2BC653003742AF /* PRIVACY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PRIVACY.md; sourceTree = "<group>"; };
+		CDA47EFB2AF9611500AD7B83 /* StackScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackScrollView.swift; sourceTree = "<group>"; };
+		CDCC8F9D2AF81141001E2A7B /* Scratchpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scratchpad.swift; sourceTree = "<group>"; };
+		CDCC8F9F2AF81953001E2A7B /* MathKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathKeyboard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD4FA9E72AF4273300D33105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD4FA9E12AF4273300D33105 = {
+			isa = PBXGroup;
+			children = (
+				CD9AA2DB2B2BC1C1003742AF /* LICENSE.md */,
+				CD9AA2DC2B2BC1C1003742AF /* README.md */,
+				CD9AA2DF2B2BC653003742AF /* PRIVACY.md */,
+				CD4FAA012AF4282000D33105 /* RCalc */,
+				CD4FA9EC2AF4273300D33105 /* SwiftRPN */,
+				CD4FA9EB2AF4273300D33105 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD4FA9EB2AF4273300D33105 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD4FA9EA2AF4273300D33105 /* SwiftRPN.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD4FA9EC2AF4273300D33105 /* SwiftRPN */ = {
+			isa = PBXGroup;
+			children = (
+				CD7C4AC72B2B58320045830B /* StackCollectionView */,
+				CD5715E22B03E33D005354A6 /* StackItems */,
+				CD6A003C2B1414DB00DF360C /* ViewController */,
+				CD6A00332B14105A00DF360C /* MathKeyboard */,
+				CD6A00322B140FEA00DF360C /* Settings */,
+				CD56AD882B0C309F008983CB /* HelpView */,
+				CD4FA9ED2AF4273300D33105 /* AppDelegate.swift */,
+				CD4FA9EF2AF4273300D33105 /* SceneDelegate.swift */,
+				CD5715E92B03EE99005354A6 /* Constants.swift */,
+				CD155BDD2B044328003BCC0D /* Colors.swift */,
+				CDCC8F9D2AF81141001E2A7B /* Scratchpad.swift */,
+				CD4FA9F32AF4273300D33105 /* Main.storyboard */,
+				CD4FA9F62AF4273400D33105 /* Assets.xcassets */,
+				CD4FA9F82AF4273400D33105 /* LaunchScreen.storyboard */,
+				CD4FA9FB2AF4273400D33105 /* Info.plist */,
+			);
+			path = SwiftRPN;
+			sourceTree = "<group>";
+		};
+		CD4FAA012AF4282000D33105 /* RCalc */ = {
+			isa = PBXGroup;
+			children = (
+				CD4FAA922AF4283C00D33105 /* src */,
+				CD4FAA732AF4282000D33105 /* lib */,
+				CD52811B2B27BE5400BB0B97 /* include */,
+			);
+			path = RCalc;
+			sourceTree = "<group>";
+		};
+		CD4FAA732AF4282000D33105 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				CD5281132B27BD9400BB0B97 /* librcalc.ios.debug.arm64.a */,
+				CD5281142B27BD9400BB0B97 /* librcalc.ios.debug.arm64.simulator.a */,
+				CD5281152B27BD9400BB0B97 /* librcalc.ios.release.arm64.a */,
+				CD5281162B27BD9400BB0B97 /* librcalc.ios.release.arm64.simulator.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		CD4FAA922AF4283C00D33105 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CD4FAA032AF4282000D33105 /* RCalcBridge.swift */,
+				CD4FAA042AF4282000D33105 /* SwiftRenderer.cpp */,
+				CD4FAA052AF4282000D33105 /* SwiftBackend.hpp */,
+				CD4FAA702AF4282000D33105 /* RCalcBinding.h */,
+				CD4FAA712AF4282000D33105 /* SwiftBackend.cpp */,
+				CD4FAA722AF4282000D33105 /* RCalcBinding.mm */,
+				CD4FAA762AF4282000D33105 /* SwiftRenderer.hpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		CD52811B2B27BE5400BB0B97 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				CD52811C2B27BE5400BB0B97 /* core */,
+				CD5281292B27BE5400BB0B97 /* app */,
+				CD5281372B27BE5400BB0B97 /* module.modulemap */,
+				CD5281382B27BE5400BB0B97 /* modules */,
+				CD5281822B27BE5400BB0B97 /* assets */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		CD52811C2B27BE5400BB0B97 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				CD5281992B27BF4600BB0B97 /* memory */,
+				CD5281982B27BF0200BB0B97 /* coredef.h */,
+				CD52811D2B27BE5400BB0B97 /* error.h */,
+				CD52811E2B27BE5400BB0B97 /* version.h */,
+				CD52811F2B27BE5400BB0B97 /* types.h */,
+				CD5281202B27BE5400BB0B97 /* version_generated.gen.h */,
+				CD5281212B27BE5400BB0B97 /* value.h */,
+				CD5281222B27BE5400BB0B97 /* units */,
+				CD5281242B27BE5400BB0B97 /* display_tags.h */,
+				CD5281252B27BE5400BB0B97 /* logger.h */,
+				CD5281262B27BE5400BB0B97 /* format.h */,
+				CD5281272B27BE5400BB0B97 /* filter.h */,
+				CD5281282B27BE5400BB0B97 /* anycase_str.h */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		CD5281222B27BE5400BB0B97 /* units */ = {
+			isa = PBXGroup;
+			children = (
+				CD5281232B27BE5400BB0B97 /* units.h */,
+			);
+			path = units;
+			sourceTree = "<group>";
+		};
+		CD5281292B27BE5400BB0B97 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				CD52812A2B27BE5400BB0B97 /* renderers */,
+				CD52812C2B27BE5400BB0B97 /* operators */,
+				CD52812F2B27BE5400BB0B97 /* application.h */,
+				CD5281302B27BE5400BB0B97 /* stack.h */,
+				CD5281312B27BE5400BB0B97 /* commands */,
+				CD5281332B27BE5400BB0B97 /* displayable */,
+				CD5281352B27BE5400BB0B97 /* help_text.h */,
+				CD5281362B27BE5400BB0B97 /* autocomplete.h */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		CD52812A2B27BE5400BB0B97 /* renderers */ = {
+			isa = PBXGroup;
+			children = (
+				CD52812B2B27BE5400BB0B97 /* renderer.h */,
+			);
+			path = renderers;
+			sourceTree = "<group>";
+		};
+		CD52812C2B27BE5400BB0B97 /* operators */ = {
+			isa = PBXGroup;
+			children = (
+				CD52812D2B27BE5400BB0B97 /* operators.h */,
+				CD52812E2B27BE5400BB0B97 /* stats.h */,
+			);
+			path = operators;
+			sourceTree = "<group>";
+		};
+		CD5281312B27BE5400BB0B97 /* commands */ = {
+			isa = PBXGroup;
+			children = (
+				CD5281322B27BE5400BB0B97 /* commands.h */,
+			);
+			path = commands;
+			sourceTree = "<group>";
+		};
+		CD5281332B27BE5400BB0B97 /* displayable */ = {
+			isa = PBXGroup;
+			children = (
+				CD5281342B27BE5400BB0B97 /* displayable.h */,
+			);
+			path = displayable;
+			sourceTree = "<group>";
+		};
+		CD5281382B27BE5400BB0B97 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				CD5281392B27BE5400BB0B97 /* bigint */,
+				CD52813B2B27BE5400BB0B97 /* register_modules.h */,
+				CD52813C2B27BE5400BB0B97 /* glm */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		CD5281392B27BE5400BB0B97 /* bigint */ = {
+			isa = PBXGroup;
+			children = (
+				CD52813A2B27BE5400BB0B97 /* bigint.h */,
+			);
+			path = bigint;
+			sourceTree = "<group>";
+		};
+		CD52813C2B27BE5400BB0B97 /* glm */ = {
+			isa = PBXGroup;
+			children = (
+				CD52813D2B27BE5400BB0B97 /* vec4.hpp */,
+				CD52813E2B27BE5400BB0B97 /* vector_relational.hpp */,
+				CD52813F2B27BE5400BB0B97 /* mat4x4.hpp */,
+				CD5281402B27BE5400BB0B97 /* mat2x2.hpp */,
+				CD5281412B27BE5400BB0B97 /* exponential.hpp */,
+				CD5281422B27BE5400BB0B97 /* vec2.hpp */,
+				CD5281432B27BE5400BB0B97 /* vec3.hpp */,
+				CD5281442B27BE5400BB0B97 /* mat3x3.hpp */,
+				CD5281452B27BE5400BB0B97 /* ext */,
+				CD52814D2B27BE5400BB0B97 /* simd */,
+				CD5281582B27BE5400BB0B97 /* matrix.hpp */,
+				CD5281592B27BE5400BB0B97 /* trigonometric.hpp */,
+				CD52815A2B27BE5400BB0B97 /* geometric.hpp */,
+				CD52815B2B27BE5400BB0B97 /* detail */,
+				CD5281802B27BE5400BB0B97 /* SCsub */,
+				CD5281812B27BE5400BB0B97 /* common.hpp */,
+			);
+			path = glm;
+			sourceTree = "<group>";
+		};
+		CD5281452B27BE5400BB0B97 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				CD5281462B27BE5400BB0B97 /* matrix_double4x4.hpp */,
+				CD5281472B27BE5400BB0B97 /* matrix_double2x2.hpp */,
+				CD5281482B27BE5400BB0B97 /* vector_double4.hpp */,
+				CD5281492B27BE5400BB0B97 /* vector_double1.hpp */,
+				CD52814A2B27BE5400BB0B97 /* vector_double3.hpp */,
+				CD52814B2B27BE5400BB0B97 /* vector_double2.hpp */,
+				CD52814C2B27BE5400BB0B97 /* matrix_double3x3.hpp */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		CD52814D2B27BE5400BB0B97 /* simd */ = {
+			isa = PBXGroup;
+			children = (
+				CD52814E2B27BE5400BB0B97 /* neon.h */,
+				CD52814F2B27BE5400BB0B97 /* vector_relational.h */,
+				CD5281502B27BE5400BB0B97 /* matrix.h */,
+				CD5281512B27BE5400BB0B97 /* packing.h */,
+				CD5281522B27BE5400BB0B97 /* common.h */,
+				CD5281532B27BE5400BB0B97 /* trigonometric.h */,
+				CD5281542B27BE5400BB0B97 /* geometric.h */,
+				CD5281552B27BE5400BB0B97 /* integer.h */,
+				CD5281562B27BE5400BB0B97 /* platform.h */,
+				CD5281572B27BE5400BB0B97 /* exponential.h */,
+			);
+			path = simd;
+			sourceTree = "<group>";
+		};
+		CD52815B2B27BE5400BB0B97 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				CD52815C2B27BE5400BB0B97 /* func_exponential.inl */,
+				CD52815D2B27BE5400BB0B97 /* func_vector_relational.inl */,
+				CD52815E2B27BE5400BB0B97 /* _fixes.hpp */,
+				CD52815F2B27BE5400BB0B97 /* func_vector_relational_simd.inl */,
+				CD5281602B27BE5400BB0B97 /* qualifier.hpp */,
+				CD5281612B27BE5400BB0B97 /* func_matrix_simd.inl */,
+				CD5281622B27BE5400BB0B97 /* _noise.hpp */,
+				CD5281632B27BE5400BB0B97 /* _features.hpp */,
+				CD5281642B27BE5400BB0B97 /* _vectorize.hpp */,
+				CD5281652B27BE5400BB0B97 /* func_geometric.inl */,
+				CD5281662B27BE5400BB0B97 /* func_common.inl */,
+				CD5281672B27BE5400BB0B97 /* _swizzle.hpp */,
+				CD5281682B27BE5400BB0B97 /* type_vec4.inl */,
+				CD5281692B27BE5400BB0B97 /* type_mat3x3.hpp */,
+				CD52816A2B27BE5400BB0B97 /* compute_common.hpp */,
+				CD52816B2B27BE5400BB0B97 /* setup.hpp */,
+				CD52816C2B27BE5400BB0B97 /* type_mat2x2.inl */,
+				CD52816D2B27BE5400BB0B97 /* type_vec1.inl */,
+				CD52816E2B27BE5400BB0B97 /* func_common_simd.inl */,
+				CD52816F2B27BE5400BB0B97 /* type_mat4x4.inl */,
+				CD5281702B27BE5400BB0B97 /* func_geometric_simd.inl */,
+				CD5281712B27BE5400BB0B97 /* type_vec2.inl */,
+				CD5281722B27BE5400BB0B97 /* type_vec3.inl */,
+				CD5281732B27BE5400BB0B97 /* type_mat4x4_simd.inl */,
+				CD5281742B27BE5400BB0B97 /* type_mat4x4.hpp */,
+				CD5281752B27BE5400BB0B97 /* func_matrix.inl */,
+				CD5281762B27BE5400BB0B97 /* type_mat2x2.hpp */,
+				CD5281772B27BE5400BB0B97 /* type_vec1.hpp */,
+				CD5281782B27BE5400BB0B97 /* _swizzle_func.hpp */,
+				CD5281792B27BE5400BB0B97 /* type_vec3.hpp */,
+				CD52817A2B27BE5400BB0B97 /* compute_vector_relational.hpp */,
+				CD52817B2B27BE5400BB0B97 /* type_vec4_simd.inl */,
+				CD52817C2B27BE5400BB0B97 /* func_exponential_simd.inl */,
+				CD52817D2B27BE5400BB0B97 /* type_vec2.hpp */,
+				CD52817E2B27BE5400BB0B97 /* type_mat3x3.inl */,
+				CD52817F2B27BE5400BB0B97 /* type_vec4.hpp */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		CD5281822B27BE5400BB0B97 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				CD5281832B27BE5400BB0B97 /* license.gen.h */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		CD5281992B27BF4600BB0B97 /* memory */ = {
+			isa = PBXGroup;
+			children = (
+				CD52819A2B27BF4600BB0B97 /* allocator.h */,
+				CD52819B2B27BF4600BB0B97 /* cowvec.h */,
+			);
+			path = memory;
+			sourceTree = "<group>";
+		};
+		CD56AD882B0C309F008983CB /* HelpView */ = {
+			isa = PBXGroup;
+			children = (
+				CD56AD862B0C2DC5008983CB /* MainHelpView.swift */,
+				CD9A35372B0E75F3002ADB07 /* HelpExampleView.swift */,
+				CD9A35352B0E6857002ADB07 /* HelpDisclosureStyle.swift */,
+				CD56AD892B0C30AF008983CB /* HelpSection.swift */,
+				CD56AD8B2B0C35C8008983CB /* HelpCommand.swift */,
+				CD56AD8D2B0C3FCC008983CB /* HelpOperator.swift */,
+				CD56AD8F2B0C4760008983CB /* HelpUnit.swift */,
+			);
+			path = HelpView;
+			sourceTree = "<group>";
+		};
+		CD5715E22B03E33D005354A6 /* StackItems */ = {
+			isa = PBXGroup;
+			children = (
+				CD5715E32B03E367005354A6 /* DisplayChunk.swift */,
+				CD478BD72B28C68100A4AC3D /* CopyableLabel.swift */,
+				CD5715E52B03E4C2005354A6 /* DisplayLine.swift */,
+				CD5715E72B03E9DF005354A6 /* DisplayEntry.swift */,
+				CDA47EFB2AF9611500AD7B83 /* StackScrollView.swift */,
+				CD8ADB6B2AF9C2B7007D975C /* StackItemView.swift */,
+			);
+			path = StackItems;
+			sourceTree = "<group>";
+		};
+		CD6A00322B140FEA00DF360C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CD9A353D2B0FBA3A002ADB07 /* SettingsController.swift */,
+				CD6A00302B140FAC00DF360C /* Settings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CD6A00332B14105A00DF360C /* MathKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CDCC8F9F2AF81953001E2A7B /* MathKeyboard.swift */,
+				CD6A00382B14148E00DF360C /* OperatorTag.swift */,
+				CD6A003A2B14149400DF360C /* ExtraButtonAssignment.swift */,
+				CD6A00362B1413E200DF360C /* MathKeyboard+Layout.swift */,
+				CD6A00342B14121000DF360C /* MathKeyboard+Buttons.swift */,
+				CD4971192B128212005195AE /* ExtraButtonAlertController.swift */,
+			);
+			path = MathKeyboard;
+			sourceTree = "<group>";
+		};
+		CD6A003C2B1414DB00DF360C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD4FA9F12AF4273300D33105 /* ViewController.swift */,
+				CD6A00452B14165A00DF360C /* ViewController+Layout.swift */,
+				CD6A00432B1415CD00DF360C /* ViewController+TextField.swift */,
+				CD6A00412B14156800DF360C /* ViewController+ScrollView.swift */,
+				CD6A003F2B14152B00DF360C /* ViewController+RCalcReceiver.swift */,
+				CD6A003D2B1414EE00DF360C /* ViewController+Navigation.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CD7C4AC72B2B58320045830B /* StackCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				CD7C4AC82B2B594E0045830B /* StackCollectionDataSource.swift */,
+				CD9AA2D72B2B8DD2003742AF /* StackCollectionView.swift */,
+				CD9AA2D32B2B613A003742AF /* StackCollectionCell.swift */,
+				CD9AA2D92B2BB2A2003742AF /* StackCollectionLayout.swift */,
+			);
+			path = StackCollectionView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD4FA9E92AF4273300D33105 /* SwiftRPN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD4FA9FE2AF4273400D33105 /* Build configuration list for PBXNativeTarget "SwiftRPN" */;
+			buildPhases = (
+				CD4FA9E62AF4273300D33105 /* Sources */,
+				CD4FA9E72AF4273300D33105 /* Frameworks */,
+				CD4FA9E82AF4273300D33105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftRPN;
+			productName = SwiftRPN;
+			productReference = CD4FA9EA2AF4273300D33105 /* SwiftRPN.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD4FA9E22AF4273300D33105 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CD4FA9E92AF4273300D33105 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = CD4FA9E52AF4273300D33105 /* Build configuration list for PBXProject "SwiftRPN" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD4FA9E12AF4273300D33105;
+			productRefGroup = CD4FA9EB2AF4273300D33105 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD4FA9E92AF4273300D33105 /* SwiftRPN */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD4FA9E82AF4273300D33105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5281872B27BE5400BB0B97 /* func_matrix_simd.inl in Resources */,
+				CD5281912B27BE5400BB0B97 /* type_vec3.inl in Resources */,
+				CD4FA9FA2AF4273400D33105 /* LaunchScreen.storyboard in Resources */,
+				CD5281962B27BE5400BB0B97 /* type_mat3x3.inl in Resources */,
+				CD9AA2DD2B2BC1C1003742AF /* LICENSE.md in Resources */,
+				CD52818C2B27BE5400BB0B97 /* type_vec1.inl in Resources */,
+				CD4FA9F72AF4273400D33105 /* Assets.xcassets in Resources */,
+				CD52818B2B27BE5400BB0B97 /* type_mat2x2.inl in Resources */,
+				CD52818E2B27BE5400BB0B97 /* type_mat4x4.inl in Resources */,
+				CD4FA9F52AF4273300D33105 /* Main.storyboard in Resources */,
+				CD5281842B27BE5400BB0B97 /* func_exponential.inl in Resources */,
+				CD5281972B27BE5400BB0B97 /* SCsub in Resources */,
+				CD9AA2DE2B2BC1C1003742AF /* README.md in Resources */,
+				CD52818A2B27BE5400BB0B97 /* type_vec4.inl in Resources */,
+				CD5281942B27BE5400BB0B97 /* type_vec4_simd.inl in Resources */,
+				CD5281882B27BE5400BB0B97 /* func_geometric.inl in Resources */,
+				CD52818F2B27BE5400BB0B97 /* func_geometric_simd.inl in Resources */,
+				CD5281862B27BE5400BB0B97 /* func_vector_relational_simd.inl in Resources */,
+				CD5281852B27BE5400BB0B97 /* func_vector_relational.inl in Resources */,
+				CD5281892B27BE5400BB0B97 /* func_common.inl in Resources */,
+				CD52818D2B27BE5400BB0B97 /* func_common_simd.inl in Resources */,
+				CD5281922B27BE5400BB0B97 /* type_mat4x4_simd.inl in Resources */,
+				CD5281932B27BE5400BB0B97 /* func_matrix.inl in Resources */,
+				CD5281902B27BE5400BB0B97 /* type_vec2.inl in Resources */,
+				CD5281952B27BE5400BB0B97 /* func_exponential_simd.inl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD4FA9E62AF4273300D33105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCC8FA02AF81953001E2A7B /* MathKeyboard.swift in Sources */,
+				CD4FAA792AF4282000D33105 /* SwiftRenderer.cpp in Sources */,
+				CD6A00312B140FAC00DF360C /* Settings.swift in Sources */,
+				CDCC8F9E2AF81141001E2A7B /* Scratchpad.swift in Sources */,
+				CD4FA9F22AF4273300D33105 /* ViewController.swift in Sources */,
+				CD7C4AC92B2B594E0045830B /* StackCollectionDataSource.swift in Sources */,
+				CD6A00402B14152B00DF360C /* ViewController+RCalcReceiver.swift in Sources */,
+				CD4FAA782AF4282000D33105 /* RCalcBridge.swift in Sources */,
+				CD9AA2D82B2B8DD2003742AF /* StackCollectionView.swift in Sources */,
+				CD4FA9EE2AF4273300D33105 /* AppDelegate.swift in Sources */,
+				CD6A00442B1415CD00DF360C /* ViewController+TextField.swift in Sources */,
+				CD6A003E2B1414EE00DF360C /* ViewController+Navigation.swift in Sources */,
+				CD9A35382B0E75F3002ADB07 /* HelpExampleView.swift in Sources */,
+				CD56AD872B0C2DC5008983CB /* MainHelpView.swift in Sources */,
+				CD6A003B2B14149400DF360C /* ExtraButtonAssignment.swift in Sources */,
+				CD9A353E2B0FBA3A002ADB07 /* SettingsController.swift in Sources */,
+				CDA47EFC2AF9611500AD7B83 /* StackScrollView.swift in Sources */,
+				CD49711A2B128212005195AE /* ExtraButtonAlertController.swift in Sources */,
+				CD6A00372B1413E200DF360C /* MathKeyboard+Layout.swift in Sources */,
+				CD5715E82B03E9DF005354A6 /* DisplayEntry.swift in Sources */,
+				CD6A00462B14165A00DF360C /* ViewController+Layout.swift in Sources */,
+				CD4FAA8E2AF4282000D33105 /* SwiftBackend.cpp in Sources */,
+				CD9AA2DA2B2BB2A2003742AF /* StackCollectionLayout.swift in Sources */,
+				CD9A35362B0E6857002ADB07 /* HelpDisclosureStyle.swift in Sources */,
+				CD56AD902B0C4760008983CB /* HelpUnit.swift in Sources */,
+				CD6A00352B14121000DF360C /* MathKeyboard+Buttons.swift in Sources */,
+				CD56AD8E2B0C3FCC008983CB /* HelpOperator.swift in Sources */,
+				CD155BDE2B044328003BCC0D /* Colors.swift in Sources */,
+				CD5715EA2B03EE99005354A6 /* Constants.swift in Sources */,
+				CD8ADB6C2AF9C2B7007D975C /* StackItemView.swift in Sources */,
+				CD5715E62B03E4C2005354A6 /* DisplayLine.swift in Sources */,
+				CD6A00392B14148E00DF360C /* OperatorTag.swift in Sources */,
+				CD9AA2D42B2B613A003742AF /* StackCollectionCell.swift in Sources */,
+				CD478BD82B28C68100A4AC3D /* CopyableLabel.swift in Sources */,
+				CD5715E42B03E367005354A6 /* DisplayChunk.swift in Sources */,
+				CD4FA9F02AF4273300D33105 /* SceneDelegate.swift in Sources */,
+				CD4FAA8F2AF4282000D33105 /* RCalcBinding.mm in Sources */,
+				CD56AD8A2B0C30AF008983CB /* HelpSection.swift in Sources */,
+				CD56AD8C2B0C35C8008983CB /* HelpCommand.swift in Sources */,
+				CD6A00422B14156800DF360C /* ViewController+ScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD4FA9F32AF4273300D33105 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD4FA9F42AF4273300D33105 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD4FA9F82AF4273400D33105 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD4FA9F92AF4273400D33105 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD4FA9FC2AF4273400D33105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD4FA9FD2AF4273400D33105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD4FA9FF2AF4273400D33105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVZ6AP272Y;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"strtok_p=strtok_r",
+					"DEBUG=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = RCalc/include;
+				INFOPLIST_FILE = SwiftRPN/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftRPN;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCalc/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = "-lrcalc.ios.debug.arm64";
+				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = "-lrcalc.ios.debug.arm64.simulator";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.gelvin.swift-rpn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = RCalc/src/RCalcBinding.h;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = RCalc/include/modules;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CD4FAA002AF4273400D33105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVZ6AP272Y;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"strtok_p=strtok_r",
+					NDEBUG,
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = RCalc/include;
+				INFOPLIST_FILE = SwiftRPN/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftRPN;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RCalc/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = "-lrcalc.ios.release.arm64";
+				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = "-lrcalc.ios.release.arm64.simulator";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.gelvin.swift-rpn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = RCalc/src/RCalcBinding.h;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = RCalc/include/modules;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD4FA9E52AF4273300D33105 /* Build configuration list for PBXProject "SwiftRPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4FA9FC2AF4273400D33105 /* Debug */,
+				CD4FA9FD2AF4273400D33105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD4FA9FE2AF4273400D33105 /* Build configuration list for PBXNativeTarget "SwiftRPN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4FA9FF2AF4273400D33105 /* Debug */,
+				CD4FAA002AF4273400D33105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD4FA9E22AF4273300D33105 /* Project object */;
+}

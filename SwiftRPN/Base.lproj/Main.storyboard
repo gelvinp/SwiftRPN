@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SLW-Cp-GQ9">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftRPN" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5N-SK-rki" userLabel="backgroundView">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIf-fG-IFn" userLabel="InputBackground">
+                                <rect key="frame" x="0.0" y="674" width="393" height="178"/>
+                                <color key="backgroundColor" name="inputBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hHH-B0-JVD" userLabel="InputStackView">
+                                <rect key="frame" x="32" y="682" width="329" height="136"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="240" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="iJa-Ts-mX9" userLabel="InputTopAnchor">
+                                        <rect key="frame" x="0.0" y="0.0" width="329" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" placeholder="YES" id="j8e-yi-PC4"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="240" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lzG-Mz-jGR" userLabel="MessageStackView">
+                                        <rect key="frame" x="0.0" y="16" width="329" height="70"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Welcome to SwiftRPN! Type \help to see what commands and operators are supported." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qF5-2q-ZCr" userLabel="Message">
+                                                <rect key="frame" x="0.0" y="0.0" width="329" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="240" translatesAutoresizingMaskIntoConstraints="NO" id="RQD-OS-faI" userLabel="MessageSeparator">
+                                                <rect key="frame" x="0.0" y="69" width="329" height="1"/>
+                                                <color key="backgroundColor" name="mathKeyboardSeparator"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="AiY-uh-Syx"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="240" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JWA-JO-eqG" customClass="Scratchpad" customModule="SwiftRPN" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="102" width="329" height="34"/>
+                                        <color key="backgroundColor" name="scratchpadBackgroundColor"/>
+                                        <accessibility key="accessibilityConfiguration" hint="Type values, operators, and commands" label="Scratchpad"/>
+                                        <gestureRecognizers/>
+                                        <color key="textColor" name="scratchpadForegroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="f6r-ec-3bm" appends="YES" id="TR4-5k-tOL"/>
+                                            <outletCollection property="gestureRecognizers" destination="a1n-ca-fUt" appends="YES" id="g8x-qX-ueZ"/>
+                                            <outletCollection property="gestureRecognizers" destination="jha-jQ-M2u" appends="YES" id="Noq-ZT-0Yz"/>
+                                            <outletCollection property="gestureRecognizers" destination="a1c-oo-NyT" appends="YES" id="IMr-oh-wtW"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hHH-B0-JVD" secondAttribute="trailing" constant="32" placeholder="YES" id="7AM-eZ-Wa0"/>
+                            <constraint firstItem="L5N-SK-rki" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="KVp-1K-SKi"/>
+                            <constraint firstItem="L5N-SK-rki" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MIf-Ex-gAz"/>
+                            <constraint firstItem="DIf-fG-IFn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" placeholder="YES" id="NzZ-iV-Bot"/>
+                            <constraint firstItem="hHH-B0-JVD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" placeholder="YES" id="SqP-Qk-40D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DIf-fG-IFn" secondAttribute="trailing" placeholder="YES" id="T9C-UE-omw"/>
+                            <constraint firstItem="DIf-fG-IFn" firstAttribute="top" secondItem="iJa-Ts-mX9" secondAttribute="top" constant="-8" id="aIL-Nf-fpB"/>
+                            <constraint firstItem="L5N-SK-rki" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="enK-4j-cvX"/>
+                            <constraint firstItem="hHH-B0-JVD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" placeholder="YES" id="guN-qC-3Vi"/>
+                            <constraint firstAttribute="bottom" secondItem="DIf-fG-IFn" secondAttribute="bottom" id="j5P-YB-KPu"/>
+                            <constraint firstAttribute="bottom" secondItem="L5N-SK-rki" secondAttribute="bottom" id="m1M-st-RRM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hpL-YA-cm5"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="L5N-SK-rki" id="jsu-yG-JqD"/>
+                        <outlet property="inputBackground" destination="DIf-fG-IFn" id="ngf-sn-z6T"/>
+                        <outlet property="inputStack" destination="hHH-B0-JVD" id="JiC-xX-hm5"/>
+                        <outlet property="inputTopAnchor" destination="iJa-Ts-mX9" id="dGa-Q9-FFB"/>
+                        <outlet property="messageLabel" destination="qF5-2q-ZCr" id="Q8B-IG-Tqo"/>
+                        <outlet property="messageStack" destination="lzG-Mz-jGR" id="4R8-1p-J0E"/>
+                        <outlet property="scratchpad" destination="JWA-JO-eqG" id="Izk-MB-iCT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="f6r-ec-3bm" userLabel="autocompleteForwardGestureRecognizer">
+                    <connections>
+                        <action selector="onAutocompleteForward:" destination="BYZ-38-t0r" id="jxT-wY-2Lu"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="a1n-ca-fUt" userLabel="autocompleteBackwardGestureRecognizer">
+                    <connections>
+                        <action selector="onAutocompleteBackward:" destination="BYZ-38-t0r" id="HxT-Mx-ZR4"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="jha-jQ-M2u" userLabel="historyPreviousGestureRecognizer">
+                    <connections>
+                        <action selector="onHistoryPrevious:" destination="BYZ-38-t0r" id="49L-1p-WMv"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="a1c-oo-NyT" userLabel="historyNextGestureRecognizer">
+                    <connections>
+                        <action selector="onHistoryNext:" destination="BYZ-38-t0r" id="lw5-Bt-KjC"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="988.54961832061065" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QBn-5V-wyE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SLW-Cp-GQ9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0M2-sx-kcd">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="q1Y-sy-wYT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PLb-be-52p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.832061068702288" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="inputBackgroundColor">
+            <color red="0.80392156862745101" green="0.89411764705882357" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="mathKeyboardSeparator">
+            <color red="0.49019607843137253" green="0.55686274509803924" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="scratchpadBackgroundColor">
+            <color red="0.94509803921568625" green="0.96862745098039216" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="scratchpadForegroundColor">
+            <color red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
