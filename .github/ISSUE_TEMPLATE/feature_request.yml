@@ -1,12 +1,12 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
+name: Feature Request
+description: Suggest an idea for SwiftRPN
+title: "[REQUEST]: "
+labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to suggest improvements to SwiftRPN!
   - type: input
     id: version
     attributes:
@@ -22,24 +22,17 @@ body:
     validations:
       required: true
   - type: textarea
-    id: what-happened
+    id: background
     attributes:
-      label: What happened?
-      description: Please give a clear and concise description of what the bug is.
+      label: Background
+      description: Is your feature request related to a problem? What's the motivation behind your request?
     validations:
       required: true
   - type: textarea
-    id: what-should-have
+    id: description
     attributes:
-      label: What should have happened?
-      description: Please give a clear and concise description of what you expected to happen.
-    validations:
-      required: true
-  - type: textarea
-    id: steps-to-reproduce
-    attributes:
-      label: "Steps to reproduce:"
-      description: Please list the steps required to reproduce the behavior.
+      label: Description
+      description: Please give a clear and concise description of what change you would like to see.
     validations:
       required: true
   - type: textarea
